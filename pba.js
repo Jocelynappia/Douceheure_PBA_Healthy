@@ -1,4 +1,4 @@
-document.getElementById("form").addEventListener("submit", function(e) {
+/****document.getElementById("form").addEventListener("submit", function(e) {
   e.preventDefault();
   alert("Votre message a bien été envoyé 🌿");
 });
@@ -16,4 +16,4 @@ function showSlide() {
     slides[index].classList.add("active");
 }
 
-setInterval(showSlide, 4000); // change toutes les 4 secondes
+setInterval(showSlide, 4000); // change toutes les 4 secondes***/////
