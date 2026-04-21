@@ -1,19 +1,21 @@
-/****document.getElementById("form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Votre message a bien été envoyé 🌿");
-});
+// DIAPORAMA
 let slides = document.querySelectorAll(".slide");
 let index = 0;
 
 function showSlide() {
     slides.forEach(slide => slide.classList.remove("active"));
 
-    index++;
-    if (index >= slides.length) {
-        index = 0;
-    }
+    index = (index + 1) % slides.length;
 
     slides[index].classList.add("active");
 }
 
-setInterval(showSlide, 4000); // change toutes les 4 secondes***/////
+setInterval(showSlide, 4000);
+
+// FORMULAIRE (optionnel, sans bloquer Formspree)
+const form = document.querySelector("form");
+if (form) {
+  form.addEventListener("submit", function() {
+    alert("Votre message a bien été envoyé 🌿");
+  });
+}

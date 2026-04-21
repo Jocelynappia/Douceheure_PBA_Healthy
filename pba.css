@@ -37,11 +37,20 @@ nav a {
   text-decoration: none;
 }
 
-/* SECTIONS */
+.btn:hover {
+  background: #4a6a69;
+}
+
+/* SECTIONS (espaces réduits) */
 section:not(#pba):not(#contact) {
-  padding: 60px 20px;
+  padding: 35px 20px;
   max-width: 800px;
   margin: auto;
+}
+
+/* BONUS : équilibre vertical */
+section {
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -89,7 +98,7 @@ p {
   flex: 1;
   height: 350px;
   max-width: 450px;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -178,7 +187,7 @@ p {
 }
 
 /* ===================== */
-/* CONTACT (NOUVEAU) */
+/* CONTACT */
 /* ===================== */
 
 #contact {
@@ -253,10 +262,22 @@ p {
   }
 
   .services-container {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+    max-width: 400px;
   }
 
   .contact-container {
     flex-direction: column;
   }
+}
+
+/* Sécurité images */
+img {
+  max-width: 100%;
+  height: auto;
 }
